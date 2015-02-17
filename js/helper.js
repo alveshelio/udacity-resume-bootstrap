@@ -43,16 +43,21 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div><br>';
 
 var internationalizeButton = '<button>Internationalize</button>';
+//var internationalizeName = '<div id="nameCap" class="orange"></div>';
 var googleMap = '<div id="map"></div>';
 
-
+function inName( name ) {
+	var finalName = name.split( " " );
+	return finalName[ 0 ].charAt( 0 ).toUpperCase() + finalName[ 0 ].slice( 1 ).toLowerCase() + " " + finalName[ 1 ].toUpperCase();
+}
 /*
  The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
  */
 $(document).ready(function() {
 	$('button').click(function() {
-		var iName = inName() || function(){};
-		$('#name').html(iName);
+		var iName = inName( "sebastien thrun" ) || function(){};
+		console.log(iName);
+		$('#nameCap').append(iName);
 	});
 });
 

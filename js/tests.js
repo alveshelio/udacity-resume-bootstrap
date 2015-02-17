@@ -40,3 +40,63 @@
 //console.log(nameChanger(name));
 
 
+//var work = {
+//	"jobs": [
+//		{
+//			"employer": "Udacity",
+//			"title": "Course Developer",
+//			"location": "Mountain View, CA",
+//			"dates": "Feb 2014 - Current",
+//			"description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+//		},
+//		{
+//			"employer": "LearnBIG",
+//			"title": "Software Engineer",
+//			"location": "Seattle, WA",
+//			"dates": "May 2013 - Jan 2014",
+//			"description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+//		},
+//		{
+//			"employer": "LEAD Academy Charter High School",
+//			"title": "Science Teacher",
+//			"location": "Nashville, TN",
+//			"dates": "Jul 2012 - May 2013",
+//			"description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+//		},
+//		{
+//			"employer": "Stratford High School",
+//			"title": "Science Teacher",
+//			"location": "Nashville, TN",
+//			"dates": "Jun 2009 - Jun 2012",
+//			"description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+//		}
+//	]
+//};
+//
+//// Your code goes here! Let me help you get started
+//
+//function locationizer(obj) {
+//	var locationArray = [];
+//
+//	//for ( var job in obj ) {
+//	//	for ( var i = 0; i < obj[job].length; i++ ) {
+//	//		locationArray.push( obj[job][i].location );
+//	//	}
+//	//}
+//
+//	for ( var items in obj.jobs ) {
+//		locationArray.push( obj.jobs[items].location );
+//	}
+//
+//	return locationArray;
+//}
+//
+//// Did locationizer() work? This line will tell you!
+//console.log(locationizer(work));
+
+
+function feedCat() {
+	console.log( "Kibble, tinned food and water" );
+}
+
+console.log( feedCat instanceof Object);
