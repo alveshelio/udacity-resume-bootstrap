@@ -95,8 +95,3 @@
 //console.log(locationizer(work));
 
 
-function feedCat() {
-	console.log( "Kibble, tinned food and water" );
-}
-
-console.log( feedCat instanceof Object);

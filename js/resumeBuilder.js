@@ -207,6 +207,9 @@ var education = {
 	}
 };
 
+// Appending the map to the page
+$( "#mapDiv" ).append( googleMap );
+
 bio.display();
 work.display();
 project.display();
