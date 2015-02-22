@@ -7,7 +7,7 @@ var bio = {
 		"github" : "helioalves",
 		"blog" : "http://www.helioalves.com/blog",
 		"twitter" : "@helioalves",
-		"location" : "Montreal, Canada"
+		"location" : "Montreal, QC, Canada"
 	},
 	"welcomeMessage" : "Soyez les bien venus sur mon Portfolio",
 	"skills" : [ "HTML/CSS", "JavaScript", "Responsive" ],
@@ -51,7 +51,7 @@ var work = {
 		{
 		"employer" : "Employer 1",
 		"title" : "Junior Front-End Developer",
-		"location" : "Montreal, QC",
+		"location" : "MTL, QC",
 		"dates" : "June 2008 - March 2010",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aspernatur beatae commodi corporis ea enim ex explicabo facere fugiat fugit incidunt, iure molestiae obcaecati officia pariatur provident quod, vero!"
 		},
@@ -65,7 +65,7 @@ var work = {
 		{
 			"employer" : "Employer 3",
 			"title" : "Senior Front-End Developer",
-			"location" : "Montreal, QC",
+			"location" : "Laval, QC",
 			"dates" : "June 2012 - March 2014",
 			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At earum est et facilis nihil perspiciatis, recusandae saepe sequi. Eligendi hic molestias porro rem, repellendus vel."
 		}

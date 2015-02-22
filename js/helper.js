@@ -91,7 +91,7 @@ $(document).click(function(loc) {
  https://developers.google.com/maps/documentation/javascript/reference
  */
 var map;    // declares a global map variable
-
+var geocoder;
 
 /*
  Start here! initializeMap() is called when page is loaded.
@@ -110,8 +110,6 @@ function initializeMap() {
 	// <div id="map">, which is appended as part of an exercise late in the course.
 
 	map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-	//map = google.maps.Map(document.getElementById('map'), mapOptions);
-
 
 	/*
 	 locationFinder() returns an array of every location string from the JSONs
@@ -145,41 +143,41 @@ function initializeMap() {
 	 placeData is the object returned from search results containing information
 	 about a single location.
 	 */
-	//function createMapMarker(placeData) {
-	//
-	//	// The next lines save location data from the search result object to local variables
-	//	var lat = placeData.geometry.location.lat();  // latitude from the place service
-	//	var lon = placeData.geometry.location.lng();  // longitude from the place service
-	//	var name = placeData.formatted_address;   // name of the place from the place service
-	//	var bounds = window.mapBounds;            // current boundaries of the map window
-	//
-	//	// marker is an object with additional data about the pin for a single location
-	//	var marker = new google.maps.Marker({
-	//		map: map,
-	//		position: placeData.geometry.location,
-	//		title: name
-	//	});
-	//
-	//	// infoWindows are the little helper windows that open when you click
-	//	// or hover over a pin on a map. They usually contain more information
-	//	// about a location.
-	//	var infoWindow = new google.maps.InfoWindow({
-	//		content: name
-	//	});
-	//
-	//	// hmmmm, I wonder what this is about...
-	//	google.maps.event.addListener(marker, 'click', function() {
-	//
-	//	});
-	//
-	//	// this is where the pin actually gets added to the map.
-	//	// bounds.extend() takes in a map location object
-	//	bounds.extend(new google.maps.LatLng(lat, lon));
-	//	// fit the map to the new marker
-	//	map.fitBounds(bounds);
-	//	// center the map
-	//	map.setCenter(bounds.getCenter());
-	//}
+	function createMapMarker(placeData) {
+
+		// The next lines save location data from the search result object to local variables
+		var lat = placeData.geometry.location.lat();  // latitude from the place service
+		var lon = placeData.geometry.location.lng();  // longitude from the place service
+		var name = placeData.formatted_address;   // name of the place from the place service
+		var bounds = window.mapBounds;            // current boundaries of the map window
+
+		// marker is an object with additional data about the pin for a single location
+		var marker = new google.maps.Marker({
+			map: map,
+			position: placeData.geometry.location,
+			title: name
+		});
+
+		// infoWindows are the little helper windows that open when you click
+		// or hover over a pin on a map. They usually contain more information
+		// about a location.
+		var infoWindow = new google.maps.InfoWindow({
+			content: "some content..."
+		});
+
+		// hmmmm, I wonder what this is about...
+		google.maps.event.addListener(marker, 'click', function() {
+			infoWindow;
+		});
+
+		// this is where the pin actually gets added to the map.
+		// bounds.extend() takes in a map location object
+		bounds.extend(new google.maps.LatLng(lat, lon));
+		// fit the map to the new marker
+		map.fitBounds(bounds);
+		// center the map
+		map.setCenter(bounds.getCenter());
+	}
 
 	/*
 	 callback(results, status) makes sure the search returned results for a location.
